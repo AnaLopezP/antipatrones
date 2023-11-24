@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La supercalcu</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div id="calculadora">
+        <h1>Calculadora WEB</h1>
+
+        <input type="text" id="inputNumbers" placeholder="Introduce números o realiza operaciones binarias">
+
+        <div id="info"></div>
+
+        <div class="seccion" id="operadores">
+            <form method = "POST" action = "/identificar_operacion">
+            <h2>Operadores Binarios</h2>
+                <button type = "submit" name = "operacion" value = "sumar">+</button>
+                <button type = "submit" name = "operacion" value = "restar">-</button>
+                <button type = "submit" name = "operacion" value = "multiplicar">*</button>
+                <button type = "submit" name = "operacion" value = "dividir">/</button>
+                <button type = "submit" name = "igual" value = "igual">=</button>
+            </form>
+        </div>
+        
+</body>
+
+</html>
