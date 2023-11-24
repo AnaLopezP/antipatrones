@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La supercalcu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1 id = "resultadooo">Resultado</h1>
+    </header>
+    <main id = "comentario-box">
+        {% if mensaje%}
+        <h2>{{mensaje}}</h2>
+        {% endif %}
+        <p>Para volver a la supercalcu: <a href="/calcu">Volver a la calcu</a></p>
+    </main>
+</body>

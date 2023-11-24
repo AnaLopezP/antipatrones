@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La supercalcu</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
 </head>
 
 <body>
@@ -27,9 +27,6 @@
                 <button type="submit" name="operacion" value="multiplicar">*</button>
                 <button type="submit" name="operacion" value="dividir">/</button>
             </div>
-
-            <label for="resultado">Resultado:</label>
-            <input type="text" name="resultado" id="resultado" placeholder="Resultado" readonly>
         </form>
 
     </div>

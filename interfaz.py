@@ -6,9 +6,9 @@ app.secret_key = 'secret_key'
 
 @app.route('/calcu')
 def calculator():
-    return render_template('calculadora.html')
+    return render_template('calculadora.html', resultado=session.get('resultado', None))
 
-@app.route('/realizar_operacion', methods=['POST', 'GET'])
+@app.route('/realizar_operacion', methods=['POST'])
 def realizar_operacion():
     if request.method == 'POST':
         numero1 = request.form.get('numero1')
@@ -32,8 +32,9 @@ def realizar_operacion():
         else:
             resultado = "Operacion no reconocida"
 
-        # Devuelve el resultado
-        return render_template('calculadora.html', numero1=numero1, numero2=numero2, resultado=resultado, operacion=operacion)
-
+        # Almacena el resultado en la sesión
+        session['resultado'] = resultado
+        mensaje = "El resultado de la operacion es: " + str(resultado)
+        return render_template('calculo_hecho.html', mensaje=mensaje)
 if __name__ == '__main__':
     app.run(debug=True)
