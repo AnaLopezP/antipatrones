@@ -1,3 +1,5 @@
+<!-- templates/calculadora.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,21 +15,24 @@
     <div id="calculadora">
         <h1>Calculadora WEB</h1>
 
-        <input type="text" id="inputNumbers" placeholder="Introduce números o realiza operaciones binarias">
+        <form method="POST" action="/realizar_operacion">
+            <label for="numero1">Número 1:</label>
+            <input type="text" name="numero1" id="numero1" placeholder="Ingrese el primer número" required>
 
-        <div id="info"></div>
+            <label for="numero2">Número 2:</label>
+            <input type="text" name="numero2" id="numero2" placeholder="Ingrese el segundo número" required>
 
-        <div class="seccion" id="operadores">
-            <form method = "POST" action = "/identificar_operacion">
-            <h2>Operadores Binarios</h2>
-                <button type = "submit" name = "operacion" value = "sumar">+</button>
-                <button type = "submit" name = "operacion" value = "restar">-</button>
-                <button type = "submit" name = "operacion" value = "multiplicar">*</button>
-                <button type = "submit" name = "operacion" value = "dividir">/</button>
-                <button type = "submit" name = "igual" value = "igual">=</button>
-            </form>
-        </div>
-        
+            <div class="seccion" id="operadores">
+                <h2>Operadores Binarios</h2>
+                <button type="submit" name="operacion" value="sumar">+</button>
+                <button type="submit" name="operacion" value="restar">-</button>
+                <button type="submit" name="operacion" value="multiplicar">*</button>
+                <button type="submit" name="operacion" value="dividir">/</button>
+            </div>
+        </form>
+
+    </div>
+
 </body>
 
 </html>
