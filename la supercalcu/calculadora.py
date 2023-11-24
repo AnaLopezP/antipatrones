@@ -9,8 +9,8 @@ class Calculadora():
     #función que hace la suma (si por alguna razón no se puede sumar, devuelve un mensaje de error)
     def suma(self):
         try:
-            self.numero1 = int(self.numero1)
-            self.numero2 = int(self.numero2)
+            self.numero1 = float(self.numero1)
+            self.numero2 = float(self.numero2)
             return self.numero1 + self.numero2
         
         except ValueError:
@@ -19,8 +19,8 @@ class Calculadora():
     #función que hace la resta (si por alguna razón no se puede sumar, devuelve un mensaje de error)
     def resta(self):
         try:
-            self.numero1 = int(self.numero1)
-            self.numero2 = int(self.numero2)
+            self.numero1 = float(self.numero1)
+            self.numero2 = float(self.numero2)
             return self.numero1 - self.numero2
         
         except ValueError:
@@ -29,8 +29,8 @@ class Calculadora():
     #función que hace la multiplicación (si por alguna razón no se puede sumar, devuelve un mensaje de error)
     def multiplicacion(self):
         try:
-            self.numero1 = int(self.numero1)
-            self.numero2 = int(self.numero2)
+            self.numero1 = float(self.numero1)
+            self.numero2 = float(self.numero2)
             return self.numero1 * self.numero2
         
         except ValueError:
