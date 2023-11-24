@@ -27,10 +27,10 @@ def realizar_operacion():
             resultado = calculadora.resta()
         elif operacion == 'multiplicar':
             resultado = calculadora.multiplicacion()
-        elif operacion == 'division':
+        elif operacion == 'dividir':
             resultado = calculadora.division()
-        else:
-            resultado = "Operacion no reconocida"
+        #else:
+        #    resultado = "Operacion no reconocida"
 
         # Almacena el resultado en la sesión
         session['resultado'] = resultado

@@ -1,13 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
     margin: 0;
-    overflow: hidden; /* Evitar barras de desplazamiento por el video */
-    background-image: url('hundred-burgers.jpg'); /* Reemplaza 'nombre_de_tu_imagen.jpg' con el nombre de tu imagen */
-    background-size: cover;
-    background-position: center;
+    background-color: #ffefd5; /* Color crema claro */
 }
-
 
 #calculadora {
     width: 300px;
@@ -15,7 +11,7 @@ body {
     border: 2px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #ffffff; /* Color blanco */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,16 +41,16 @@ button {
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #ffa500; /* Color naranja */
+    background-color: #ff69b4; /* Color rosa claro */
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #ff8c00; /* Color naranja más oscuro al pasar el cursor */
+    background-color: #ff1493; /* Color rosa más oscuro al pasar el cursor */
 }
 
 .grande {
     font-size: 24px;
-    color: blue;
+    color: #4169e1; /* Color azul claro */
 }
